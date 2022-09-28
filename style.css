@@ -1,4 +1,4 @@
-.navbar{
+.nav{
     width: 85%;
     margin: auto;
     padding: 35px 0;
@@ -6,6 +6,13 @@
     align-items: center;
     justify-content: space-between;
 
+}
+.navbar{
+    flex: 1;
+    text-align: right;
+    background-color: #3D2E1A;
+    min-height: 50px;
+    font-family: 'Open Sans', sans-serif;
 }
 .navbar ul li{
     list-style: none;
@@ -16,13 +23,237 @@
     text-decoration: none;
     color: aliceblue;
     text-transform: uppercase;
+    font-size: 13px;
     
 }
-.searchbar{
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+}
+
+.input-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 35%;
+    transform: translateY(-50%, -50%);
     text-align: center;
     color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+
 }
+.front-img{
+    width: 100%;
+}
+.input-wrapper h1{
+    background-color: #557689;
+    margin: auto;
+    width: 50%;
+    font-size: 50px;
+    color: #FFF5EB;
+    border-radius: 70px;
+    width: 650px;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.search-bar {
+   width: 100%;
+   max-width: 1380px;
+   background: rgba(255,255, 255, 0.2);
+   display: flex;
+   align-items: center;
+   border-radius: 70px;
+   padding: 10px 20px;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: aliceblue;
+
+}
+::placeholder{
+    color: aliceblue;
+}
+
+
+
+.login-box{
+    margin: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 12% auto;
+    padding: 0 0;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 5);
+    max-width: 450px;
+    max-height: 420px;
+
+}
+.login-box h1{
+    text-align: center;
+    top: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.login-box ::placeholder{
+    color: gray;
+}
+.input-box{
+    margin: 31px auto;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+.input-box input{
+    width: 90%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+.login-bottom{
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+.signup-bottom{
+    margin: 40px auto 20px;
+    min-width: 200px;
+    align-items: center;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: black;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    top: 575px;
+    left: 625px;
+}
+.about{
+    margin: 200px;
+    padding: 50px;
+    background-color: #134F59;
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.posting-bottom{
+    background-color: #9AC1D6;
+    width: 80px;
+    height: 40px;
+    align-items: center;
+    border-radius: 70px;
+    
+    
+
+}
+
+.posting{
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    padding-top: 13px;
+    padding-left: 13px;
+    font-size: 15px;
+
+}
+.posting-tamplet{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+}
+@media(max-width: 700px){
+    .navbar{
+        font-size: 10px;
+    }
+    .input-wrapper{
+        font-size: 10px;
+        
+    }
+    .search-bar {
+        width: 100%;
+        max-width: 350px;
+        background: rgba(255,255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 70px;
+        padding: 5px 10px;
+        position: fixed;
+        right: 10px;
+        
+     }
+     .login-box{
+        font-size: 12px;
+     }
+     .login-box{
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        right: 45px;
+        min-width: 300px;
+     }
+     .signup-bottom{
+        min-height: 20px;
+        min-width: 100px;
+        position: absolute;
+        top:375px;
+        left: 100px;
+     }
+     .input-wrapper h1{
+        width: 300px;
+        font-size: 20px;
+        height: 13px;
+        padding-bottom: 30px;
+        top: 100px;
+     }
+     .front-img{
+        display: contents;
+     }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
