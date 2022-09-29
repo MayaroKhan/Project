@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<script src="script.js"></script>
 </head>
 <body background="./steel-gray-color-solid-background-1920x1080.png">
     <nav>
@@ -29,12 +30,18 @@
    <div class="input-wrapper">
     <h1>Welcome to Nearperson</h1>
     <p>Using this search bar to find the help service that you need</p>
-    <form action="" class="search-bar">
-        <input type="text" placeholder="search here" />
-
-    </form>
+    <div action="" class="search-bar">
+        <input type="text" id="search" placeholder="search here" data-search/>  
+        
+    </div class="user-card" data-user-cards-container>
+    <template class="user-data-templet">
+        <div class="user-search">
+            <div class="userdataheader"></div>
+            <div class="userdatabody"></div>
+        </div>
+    </template>
    </div>
-
+   
      
 </body>
 </html>

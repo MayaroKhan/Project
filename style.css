@@ -136,6 +136,25 @@
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
 }
+.signup-box{
+    margin: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 12% auto;
+    padding: 0 0;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 5);
+    max-width: 450px;
+    max-height: 420px;
+
+}
+.signup-box h1{
+    text-align: center;
+    top: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.signup-box ::placeholder{
+    color: gray;
+}
 .signup-bottom{
     margin: 40px auto 20px;
     min-width: 200px;
